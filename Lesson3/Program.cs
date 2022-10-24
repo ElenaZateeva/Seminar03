@@ -22,6 +22,7 @@ string Replase(string text, char oldValue, char newValue)
 string newText = Replase(text, ' ', '|');
 Console.WriteLine(newText);
 Console.WriteLine();
+
 string newText1 = Replase(newText, 'в', 'В');
 Console.WriteLine(newText1);
 Console.WriteLine();
