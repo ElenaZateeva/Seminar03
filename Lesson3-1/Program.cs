@@ -20,15 +20,15 @@ void SelectionSort(int[] array)
     int count = array.Length;
     for (int i = 0; i < count-1; i++)
     {
-        int minPosition = i;
+        int maxPosition = i;
         for (int j = i + 1; j < count; j++)
         {
-            if (array[i] < array[minPosition])
-                minPosition = j;
+            if (array[i] > array[maxPosition])
+                maxPosition = j;
         }
         int temporary = array[i];
-        array[i] = array[minPosition];
-        array[minPosition] = temporary;
+        array[i] = array[maxPosition];
+        array[maxPosition] = temporary;
     }
 }
 
